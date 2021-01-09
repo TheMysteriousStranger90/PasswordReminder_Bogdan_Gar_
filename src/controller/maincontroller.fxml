@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #EBF4FE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="exitButton" layoutX="14.0" layoutY="531.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #99C1EA;" text="Выход">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetButton" layoutX="100.0" layoutY="531.0" mnemonicParsing="false" onAction="#resetButtonOnAction" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #99C1EA;" text="Сбросить">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="listButton" layoutX="375.0" layoutY="531.0" mnemonicParsing="false" onAction="#listButtonOnAction" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #99C1EA;" text="Список">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveButton" layoutX="460.0" layoutY="531.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #99C1EA;" text="Сохранить">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="117.0" prefHeight="30.0" prefWidth="100.0" text="Адрес">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="172.0" prefHeight="30.0" prefWidth="100.0" text="Логин">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="226.0" prefHeight="30.0" prefWidth="100.0" text="Пароль">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressField" layoutX="100.0" layoutY="120.0" prefHeight="26.0" prefWidth="210.0" promptText="Введите адрес ресурса" />
+            <TextField fx:id="loginField" layoutX="100.0" layoutY="174.0" prefHeight="26.0" prefWidth="210.0" promptText="Введите логин" />
+            <Label layoutX="220.0" layoutY="272.0" prefHeight="40.0" prefWidth="85.0" text="ИЛИ">
+               <font>
+                  <Font name="Century Gothic" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="312.0" prefHeight="40.0" prefWidth="525.0" text="создайте генерируемый пароль введя количество символов:">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField1" layoutX="102.0" layoutY="229.0" prefHeight="26.0" prefWidth="210.0" promptText="Введите пароль" />
+            <PasswordField fx:id="passwordField2" layoutX="206.0" layoutY="364.0" onKeyTyped="#passwordField2KeyTyped" prefHeight="40.0" prefWidth="90.0" />
+            <Label fx:id="messageLabel" layoutX="150.0" layoutY="26.0" prefHeight="40.0" prefWidth="235.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="messageLabel2" layoutX="150.0" layoutY="430.0" prefHeight="40.0" prefWidth="235.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #5DA8F2;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="111.0" prefHeight="45.0" prefWidth="165.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="157.0" prefHeight="45.0" prefWidth="165.0" text="Reminder" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
