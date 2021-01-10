@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Serialize_DeserializeRecord {
 
-    private static final String FILE_PATH = "files_examples/users_examples.ser";    // Пример
+    private static final String FILE_PATH = "last_session/example.ser";    // Пример
     // Запись
     public static void writeRecord(ArrayList<Record> obj) {
         try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(FILE_PATH))) {
